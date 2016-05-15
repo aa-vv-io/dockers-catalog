@@ -1,10 +1,10 @@
 
-FROM ubuntu
+FROM alpine
 
 MAINTAINER  levm "av@levm.eu"
 
 # Install the relevant packages
-RUN apt-get update && apt-get install apache2 libapache2-mod-php5 -y
+RUN apt-get update && apt-get install apache2 libapache2-mod-php -y
 
 # Enable the php mod we just installed
 RUN a2enmod php5 rewrite
