@@ -1,5 +1,5 @@
 
-FROM alpine
+FROM ubuntu
 
 MAINTAINER  levm "av@levm.eu"
 
