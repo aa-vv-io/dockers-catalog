@@ -1,5 +1,5 @@
 
-FROM alpine
+FROM ubuntu
 
 MAINTAINER  levm "av@levm.eu"
 
@@ -7,7 +7,7 @@ MAINTAINER  levm "av@levm.eu"
 RUN apt-get update && apt-get install apache2 libapache2-mod-php -y
 
 # Enable the php mod we just installed
-RUN a2enmod php5 rewrite
+RUN a2enmod php7.0 rewrite
 
 # Update our apache sites available with the config we created
 
